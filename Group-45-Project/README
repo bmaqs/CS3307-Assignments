@@ -1,9 +1,11 @@
 ![Quick Track]( https://repo.csd.uwo.ca/projects/COMPSCI3307_F2020/repos/group45/raw/img/qtrack_logo_text_sidebyside.png?at=refs%2Fheads%2Fmaster)
 ==============================================================================================================================================================================================================================
-Intro
+#Intro
 -----
 Welcome to the QuickTrack Contact Tracing System!
 This project was created for Computer Science 3307A in Fall 2020 at Western University.
+
+QuickTrack is a software allowing businesses to track incidences of COVID-19 in their establishments and automates notifications to their customer base of any possible exposures. It also allows consumers to easily report COVID-19 cases they have experienced as well as easily receive notifications about potential exposures. 
 
 Info
 ----
