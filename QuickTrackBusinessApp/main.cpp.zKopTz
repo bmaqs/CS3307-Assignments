@@ -1,0 +1,14 @@
+#include "mainwindow.h"
+#include "Database.h"
+#include <stdlib.h>
+#include <iostream>
+#include <QApplication>
+using namespace std;
+int main(int argc, char *argv[])
+{
+    cout <<"hello world"<<endl;
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
+}

@@ -1,0 +1,107 @@
+\hypertarget{classIsCustomer}{}\doxysection{Is\+Customer Class Reference}
+\label{classIsCustomer}\index{IsCustomer@{IsCustomer}}
+
+
+This class checks if the customer is a customer in the database.  
+
+
+Inheritance diagram for Is\+Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIsCustomer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIsCustomer_affad9ee2060175053f0450e465221832}{Is\+Customer}} ()
+\begin{DoxyCompactList}\small\item\em Creates a connection to the database. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIsCustomer_abfa5ee3427cbf4f8b3a6deda78127fe9}{search\+Customer}} (string username)
+\begin{DoxyCompactList}\small\item\em Searches for the number of customers with that username. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIsCustomer_a27e7509d8afb7034267bc1dd87ef812c}{search\+Customer}} (int id)
+\begin{DoxyCompactList}\small\item\em Searches for the number of customers with that ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIsCustomer_ae4f807ff5a6311795bc39f56e1a3f1a8}{$\sim$\+Is\+Customer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class checks if the customer is a customer in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to be sent to the emails \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIsCustomer_affad9ee2060175053f0450e465221832}\label{classIsCustomer_affad9ee2060175053f0450e465221832}} 
+\index{IsCustomer@{IsCustomer}!IsCustomer@{IsCustomer}}
+\index{IsCustomer@{IsCustomer}!IsCustomer@{IsCustomer}}
+\doxysubsubsection{\texorpdfstring{IsCustomer()}{IsCustomer()}}
+{\footnotesize\ttfamily Is\+Customer\+::\+Is\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a connection to the database. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database\+::\+Database(string server\+Name, string user\+Name, string password)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classIsCustomer_ae4f807ff5a6311795bc39f56e1a3f1a8}\label{classIsCustomer_ae4f807ff5a6311795bc39f56e1a3f1a8}} 
+\index{IsCustomer@{IsCustomer}!````~IsCustomer@{$\sim$IsCustomer}}
+\index{````~IsCustomer@{$\sim$IsCustomer}!IsCustomer@{IsCustomer}}
+\doxysubsubsection{\texorpdfstring{$\sim$IsCustomer()}{~IsCustomer()}}
+{\footnotesize\ttfamily Is\+Customer\+::$\sim$\+Is\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIsCustomer_a27e7509d8afb7034267bc1dd87ef812c}\label{classIsCustomer_a27e7509d8afb7034267bc1dd87ef812c}} 
+\index{IsCustomer@{IsCustomer}!searchCustomer@{searchCustomer}}
+\index{searchCustomer@{searchCustomer}!IsCustomer@{IsCustomer}}
+\doxysubsubsection{\texorpdfstring{searchCustomer()}{searchCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Is\+Customer\+::search\+Customer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Searches for the number of customers with that ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & An Int version of the ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Int corresponding to the number of customers with that ID, which should be 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIsCustomer_abfa5ee3427cbf4f8b3a6deda78127fe9}\label{classIsCustomer_abfa5ee3427cbf4f8b3a6deda78127fe9}} 
+\index{IsCustomer@{IsCustomer}!searchCustomer@{searchCustomer}}
+\index{searchCustomer@{searchCustomer}!IsCustomer@{IsCustomer}}
+\doxysubsubsection{\texorpdfstring{searchCustomer()}{searchCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Is\+Customer\+::search\+Customer (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Searches for the number of customers with that username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & A string version of the username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Int corresponding to the number of customers with that ID 
+\end{DoxyReturn}

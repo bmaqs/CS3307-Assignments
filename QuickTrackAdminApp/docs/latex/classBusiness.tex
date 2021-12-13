@@ -1,0 +1,409 @@
+\hypertarget{classBusiness}{}\doxysection{Business Class Reference}
+\label{classBusiness}\index{Business@{Business}}
+
+
+This class includes functions related to creating \mbox{\hyperlink{classBusiness}{Business}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Business.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusiness_ae04bd51a88a273e6dc4fbc284555bde1}{Business}} ()
+\begin{DoxyCompactList}\small\item\em Empty Constructor for a new \mbox{\hyperlink{classBusiness}{Business}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusiness_a6a2806cba74154800770e252bd88e1e2}{Business}} (string name, string email)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBusiness}{Business}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a6e61e64893e3f33d21a6013c95420d17}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em setter for the busines name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a0affa6c877eeb4bf7749259004ef2121}{set\+Business\+ID}} (int business\+ID)
+\begin{DoxyCompactList}\small\item\em setter for the unique ID of the business \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a4ae7ec18dbf3c2de29462a476dfbb8a2}{set\+Email}} (string email)
+\begin{DoxyCompactList}\small\item\em setter for the business email \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a0e7e5e8610d0dd9093d5766d35f68e94}{set\+Description}} (string description)
+\begin{DoxyCompactList}\small\item\em setter for the description of the business \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_acf6d2410821268816787248b811eb42e}{set\+Street\+Address}} (string address)
+\begin{DoxyCompactList}\small\item\em setter for the street address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a5863cf3abeba7cc9f58f48705e615977}{set\+Postal\+Code}} (string postal\+Code)
+\begin{DoxyCompactList}\small\item\em setter for the postal code of the business \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a2460c7e8ea829dbe4391738d4fdaec82}{set\+City}} (string city)
+\begin{DoxyCompactList}\small\item\em setter for the city the business is in \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_ab60431727366447f3011ed9505de30e1}{set\+Province}} (string prov)
+\begin{DoxyCompactList}\small\item\em setter for the province of the business \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a1ffa00b8ca9170f70c6f9676dc42195b}{set\+Phone\+Number}} (long int phone)
+\begin{DoxyCompactList}\small\item\em setter for the business phone number \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_a5e940bd66188d087fbd6120b3a76c713}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business name \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusiness_ad8222faebaf848cdf5c2d07c77d92a78}{get\+Business\+ID}} ()
+\begin{DoxyCompactList}\small\item\em getter for the unique business ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_afae98d9984b397e4fe3c2a1eecf8e2db}{get\+Email}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business email \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_ac92c9788c294e56ce4880d078660b853}{get\+Description}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business description \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_acdb6d75063660a18e5a7bc6a470f535c}{get\+Street\+Address}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business street address \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_a4316c96a0c252af8fcab2b052597e9ea}{get\+Postal\+Code}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business postal code \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_a5a8ebbcbc221f2db4d36a2b5beb34433}{get\+City}} ()
+\begin{DoxyCompactList}\small\item\em getter for the city the business is located in \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBusiness_abe3dbb9e55f466e1853c252a786bb0f0}{get\+Province}} ()
+\begin{DoxyCompactList}\small\item\em getter for the province where the business is located \end{DoxyCompactList}\item 
+long int \mbox{\hyperlink{classBusiness_ab0581b4e7b68ef15c04b85349bdacdbb}{get\+Phone\+Number}} ()
+\begin{DoxyCompactList}\small\item\em getter for the business phone number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusiness_a6cd255bbbd93e5e49da3913c2251f130}{to\+String}} (\mbox{\hyperlink{classBusiness}{Business}} business)
+\begin{DoxyCompactList}\small\item\em a string representation of the \mbox{\hyperlink{classBusiness}{Business}} object and its stored information \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ \mbox{\hyperlink{classBusiness_a70b28103a54abfda695f0198bc9ff3a7}{create\+Customer\+List}} ()
+\begin{DoxyCompactList}\small\item\em creates an empty list of \mbox{\hyperlink{classCustomer}{Customer}} objects \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ \mbox{\hyperlink{classBusiness_a3abfb2d62271c96621bdf8716a8e45b1}{add\+Customer}} (vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ customer\+List, \mbox{\hyperlink{classCustomer}{Customer}} new\+Customer)
+\begin{DoxyCompactList}\small\item\em adds a \mbox{\hyperlink{classCustomer}{Customer}} object to the list of \mbox{\hyperlink{classCustomer}{Customer}} objects \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class includes functions related to creating \mbox{\hyperlink{classBusiness}{Business}} objects. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusiness_ae04bd51a88a273e6dc4fbc284555bde1}\label{classBusiness_ae04bd51a88a273e6dc4fbc284555bde1}} 
+\index{Business@{Business}!Business@{Business}}
+\index{Business@{Business}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{Business()}{Business()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Business\+::\+Business (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty Constructor for a new \mbox{\hyperlink{classBusiness}{Business}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} object. 
+
+\mbox{\Hypertarget{classBusiness_a6a2806cba74154800770e252bd88e1e2}\label{classBusiness_a6a2806cba74154800770e252bd88e1e2}} 
+\index{Business@{Business}!Business@{Business}}
+\index{Business@{Business}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{Business()}{Business()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Business\+::\+Business (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBusiness}{Business}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string -\/ name of the business \\
+\hline
+{\em email} & string -\/ email for the business \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusiness_a3abfb2d62271c96621bdf8716a8e45b1}\label{classBusiness_a3abfb2d62271c96621bdf8716a8e45b1}} 
+\index{Business@{Business}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ Business\+::add\+Customer (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$}]{customer\+List,  }\item[{\mbox{\hyperlink{classCustomer}{Customer}}}]{new\+Customer }\end{DoxyParamCaption})}
+
+
+
+adds a \mbox{\hyperlink{classCustomer}{Customer}} object to the list of \mbox{\hyperlink{classCustomer}{Customer}} objects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+List} & vector$<$\+Customer$>$ -\/ list of \mbox{\hyperlink{classCustomer}{Customer}} objects \\
+\hline
+{\em new\+Customer} & \mbox{\hyperlink{classCustomer}{Customer}} -\/ a new \mbox{\hyperlink{classCustomer}{Customer}} object to be added to the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Customer$>$ -\/ list of \mbox{\hyperlink{classCustomer}{Customer}} objects with the new customer added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_a70b28103a54abfda695f0198bc9ff3a7}\label{classBusiness_a70b28103a54abfda695f0198bc9ff3a7}} 
+\index{Business@{Business}!createCustomerList@{createCustomerList}}
+\index{createCustomerList@{createCustomerList}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{createCustomerList()}{createCustomerList()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ Business\+::create\+Customer\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+creates an empty list of \mbox{\hyperlink{classCustomer}{Customer}} objects 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Customer$>$ -\/ empty list of \mbox{\hyperlink{classCustomer}{Customer}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_ad8222faebaf848cdf5c2d07c77d92a78}\label{classBusiness_ad8222faebaf848cdf5c2d07c77d92a78}} 
+\index{Business@{Business}!getBusinessID@{getBusinessID}}
+\index{getBusinessID@{getBusinessID}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getBusinessID()}{getBusinessID()}}
+{\footnotesize\ttfamily int Business\+::get\+Business\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the unique business ID 
+
+\begin{DoxyReturn}{Returns}
+int -\/ the unique business\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_a5a8ebbcbc221f2db4d36a2b5beb34433}\label{classBusiness_a5a8ebbcbc221f2db4d36a2b5beb34433}} 
+\index{Business@{Business}!getCity@{getCity}}
+\index{getCity@{getCity}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getCity()}{getCity()}}
+{\footnotesize\ttfamily string Business\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the city the business is located in 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the city where the business is located 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_ac92c9788c294e56ce4880d078660b853}\label{classBusiness_ac92c9788c294e56ce4880d078660b853}} 
+\index{Business@{Business}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily string Business\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business description 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the description of the business 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_afae98d9984b397e4fe3c2a1eecf8e2db}\label{classBusiness_afae98d9984b397e4fe3c2a1eecf8e2db}} 
+\index{Business@{Business}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily string Business\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business email 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the business email 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_a5e940bd66188d087fbd6120b3a76c713}\label{classBusiness_a5e940bd66188d087fbd6120b3a76c713}} 
+\index{Business@{Business}!getName@{getName}}
+\index{getName@{getName}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Business\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business name 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the name of the business 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_ab0581b4e7b68ef15c04b85349bdacdbb}\label{classBusiness_ab0581b4e7b68ef15c04b85349bdacdbb}} 
+\index{Business@{Business}!getPhoneNumber@{getPhoneNumber}}
+\index{getPhoneNumber@{getPhoneNumber}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getPhoneNumber()}{getPhoneNumber()}}
+{\footnotesize\ttfamily long int Business\+::get\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business phone number 
+
+\begin{DoxyReturn}{Returns}
+long int -\/ the business phone number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_a4316c96a0c252af8fcab2b052597e9ea}\label{classBusiness_a4316c96a0c252af8fcab2b052597e9ea}} 
+\index{Business@{Business}!getPostalCode@{getPostalCode}}
+\index{getPostalCode@{getPostalCode}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getPostalCode()}{getPostalCode()}}
+{\footnotesize\ttfamily string Business\+::get\+Postal\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business postal code 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the business\textquotesingle{} postal code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_abe3dbb9e55f466e1853c252a786bb0f0}\label{classBusiness_abe3dbb9e55f466e1853c252a786bb0f0}} 
+\index{Business@{Business}!getProvince@{getProvince}}
+\index{getProvince@{getProvince}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getProvince()}{getProvince()}}
+{\footnotesize\ttfamily string Business\+::get\+Province (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the province where the business is located 
+
+\begin{DoxyReturn}{Returns}
+string -\/ province code where business is located 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_acdb6d75063660a18e5a7bc6a470f535c}\label{classBusiness_acdb6d75063660a18e5a7bc6a470f535c}} 
+\index{Business@{Business}!getStreetAddress@{getStreetAddress}}
+\index{getStreetAddress@{getStreetAddress}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{getStreetAddress()}{getStreetAddress()}}
+{\footnotesize\ttfamily string Business\+::get\+Street\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the business street address 
+
+\begin{DoxyReturn}{Returns}
+string -\/ the business street address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusiness_a0affa6c877eeb4bf7749259004ef2121}\label{classBusiness_a0affa6c877eeb4bf7749259004ef2121}} 
+\index{Business@{Business}!setBusinessID@{setBusinessID}}
+\index{setBusinessID@{setBusinessID}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setBusinessID()}{setBusinessID()}}
+{\footnotesize\ttfamily void Business\+::set\+Business\+ID (\begin{DoxyParamCaption}\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+setter for the unique ID of the business 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business\+ID} & int -\/ the unique business ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a2460c7e8ea829dbe4391738d4fdaec82}\label{classBusiness_a2460c7e8ea829dbe4391738d4fdaec82}} 
+\index{Business@{Business}!setCity@{setCity}}
+\index{setCity@{setCity}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setCity()}{setCity()}}
+{\footnotesize\ttfamily void Business\+::set\+City (\begin{DoxyParamCaption}\item[{string}]{city }\end{DoxyParamCaption})}
+
+
+
+setter for the city the business is in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & string -\/ the city where the business is located \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a0e7e5e8610d0dd9093d5766d35f68e94}\label{classBusiness_a0e7e5e8610d0dd9093d5766d35f68e94}} 
+\index{Business@{Business}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setDescription()}{setDescription()}}
+{\footnotesize\ttfamily void Business\+::set\+Description (\begin{DoxyParamCaption}\item[{string}]{description }\end{DoxyParamCaption})}
+
+
+
+setter for the description of the business 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & string -\/ the description of the business \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a4ae7ec18dbf3c2de29462a476dfbb8a2}\label{classBusiness_a4ae7ec18dbf3c2de29462a476dfbb8a2}} 
+\index{Business@{Business}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily void Business\+::set\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+setter for the business email 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & string -\/ the business email \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a6e61e64893e3f33d21a6013c95420d17}\label{classBusiness_a6e61e64893e3f33d21a6013c95420d17}} 
+\index{Business@{Business}!setName@{setName}}
+\index{setName@{setName}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Business\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+setter for the busines name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string -\/ name of the business \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a1ffa00b8ca9170f70c6f9676dc42195b}\label{classBusiness_a1ffa00b8ca9170f70c6f9676dc42195b}} 
+\index{Business@{Business}!setPhoneNumber@{setPhoneNumber}}
+\index{setPhoneNumber@{setPhoneNumber}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setPhoneNumber()}{setPhoneNumber()}}
+{\footnotesize\ttfamily void Business\+::set\+Phone\+Number (\begin{DoxyParamCaption}\item[{long int}]{phone }\end{DoxyParamCaption})}
+
+
+
+setter for the business phone number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phone} & long int -\/ the business phone number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a5863cf3abeba7cc9f58f48705e615977}\label{classBusiness_a5863cf3abeba7cc9f58f48705e615977}} 
+\index{Business@{Business}!setPostalCode@{setPostalCode}}
+\index{setPostalCode@{setPostalCode}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setPostalCode()}{setPostalCode()}}
+{\footnotesize\ttfamily void Business\+::set\+Postal\+Code (\begin{DoxyParamCaption}\item[{string}]{postal\+Code }\end{DoxyParamCaption})}
+
+
+
+setter for the postal code of the business 
+
+
+\begin{DoxyParams}{Parameters}
+{\em postal\+Code} & string -\/ the postal code of the business \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_ab60431727366447f3011ed9505de30e1}\label{classBusiness_ab60431727366447f3011ed9505de30e1}} 
+\index{Business@{Business}!setProvince@{setProvince}}
+\index{setProvince@{setProvince}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setProvince()}{setProvince()}}
+{\footnotesize\ttfamily void Business\+::set\+Province (\begin{DoxyParamCaption}\item[{string}]{prov }\end{DoxyParamCaption})}
+
+
+
+setter for the province of the business 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prov} & string -\/ the province code the business is located in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_acf6d2410821268816787248b811eb42e}\label{classBusiness_acf6d2410821268816787248b811eb42e}} 
+\index{Business@{Business}!setStreetAddress@{setStreetAddress}}
+\index{setStreetAddress@{setStreetAddress}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{setStreetAddress()}{setStreetAddress()}}
+{\footnotesize\ttfamily void Business\+::set\+Street\+Address (\begin{DoxyParamCaption}\item[{string}]{address }\end{DoxyParamCaption})}
+
+
+
+setter for the street address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & string -\/ the street address of the business \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusiness_a6cd255bbbd93e5e49da3913c2251f130}\label{classBusiness_a6cd255bbbd93e5e49da3913c2251f130}} 
+\index{Business@{Business}!toString@{toString}}
+\index{toString@{toString}!Business@{Business}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily void Business\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusiness}{Business}}}]{business }\end{DoxyParamCaption})}
+
+
+
+a string representation of the \mbox{\hyperlink{classBusiness}{Business}} object and its stored information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business} & \mbox{\hyperlink{classBusiness}{Business}} -\/ business object \\
+\hline
+\end{DoxyParams}

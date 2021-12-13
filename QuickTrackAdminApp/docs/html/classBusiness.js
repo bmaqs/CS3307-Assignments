@@ -1,0 +1,26 @@
+var classBusiness =
+[
+    [ "Business", "classBusiness.html#ae04bd51a88a273e6dc4fbc284555bde1", null ],
+    [ "Business", "classBusiness.html#a6a2806cba74154800770e252bd88e1e2", null ],
+    [ "addCustomer", "classBusiness.html#a3abfb2d62271c96621bdf8716a8e45b1", null ],
+    [ "createCustomerList", "classBusiness.html#a70b28103a54abfda695f0198bc9ff3a7", null ],
+    [ "getBusinessID", "classBusiness.html#ad8222faebaf848cdf5c2d07c77d92a78", null ],
+    [ "getCity", "classBusiness.html#a5a8ebbcbc221f2db4d36a2b5beb34433", null ],
+    [ "getDescription", "classBusiness.html#ac92c9788c294e56ce4880d078660b853", null ],
+    [ "getEmail", "classBusiness.html#afae98d9984b397e4fe3c2a1eecf8e2db", null ],
+    [ "getName", "classBusiness.html#a5e940bd66188d087fbd6120b3a76c713", null ],
+    [ "getPhoneNumber", "classBusiness.html#ab0581b4e7b68ef15c04b85349bdacdbb", null ],
+    [ "getPostalCode", "classBusiness.html#a4316c96a0c252af8fcab2b052597e9ea", null ],
+    [ "getProvince", "classBusiness.html#abe3dbb9e55f466e1853c252a786bb0f0", null ],
+    [ "getStreetAddress", "classBusiness.html#acdb6d75063660a18e5a7bc6a470f535c", null ],
+    [ "setBusinessID", "classBusiness.html#a0affa6c877eeb4bf7749259004ef2121", null ],
+    [ "setCity", "classBusiness.html#a2460c7e8ea829dbe4391738d4fdaec82", null ],
+    [ "setDescription", "classBusiness.html#a0e7e5e8610d0dd9093d5766d35f68e94", null ],
+    [ "setEmail", "classBusiness.html#a4ae7ec18dbf3c2de29462a476dfbb8a2", null ],
+    [ "setName", "classBusiness.html#a6e61e64893e3f33d21a6013c95420d17", null ],
+    [ "setPhoneNumber", "classBusiness.html#a1ffa00b8ca9170f70c6f9676dc42195b", null ],
+    [ "setPostalCode", "classBusiness.html#a5863cf3abeba7cc9f58f48705e615977", null ],
+    [ "setProvince", "classBusiness.html#ab60431727366447f3011ed9505de30e1", null ],
+    [ "setStreetAddress", "classBusiness.html#acf6d2410821268816787248b811eb42e", null ],
+    [ "toString", "classBusiness.html#a6cd255bbbd93e5e49da3913c2251f130", null ]
+];

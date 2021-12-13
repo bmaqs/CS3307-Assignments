@@ -1,0 +1,158 @@
+![Quick Track]( https://repo.csd.uwo.ca/projects/COMPSCI3307_F2020/repos/group45/raw/img/qtrack_logo_text_sidebyside.png?at=refs%2Fheads%2Fmaster)
+==============================================================================================================================================================================================================================
+Intro
+-----
+Welcome to the QuickTrack Contact Tracing System!
+This project was created for Computer Science 3307A in Fall 2020 at Western University.
+
+Info
+----
+For information on Contact Tracing: https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus/contact-tracing-initiative
+For information on the Middlesex Health Unit Contact Tracing Regulations: https://www.healthunit.com/section-22-orders-and-instructions
+
+Group Info
+----------
+Number: Group 45
+Members:
+    Evan Makris
+    Braikhna Yousafzai
+    Abdulrahim Hamed
+    Jem Parlakyigit
+    Colin Stoddart
+TA: Reco King
+Professor: Mike Katchabaw
+==============================================================================================================================================================================================================================
+
+==============================================================================================================================================================================================================================
+How to run this application
+---------------------------
+1. Ensure you have set up a Debian-Based system such as the Raspberry Pi OS
+
+2. This application requires the installation of mysql connector developer.
+	To check if this is installed enter the following command:
+		apt-cache show libmysqlcppconn-dev 
+	If the package is not installed, it can be installed by using the following commands:
+		sudo apt-get update
+		sudo apt-get install libmysqlcppconn-dev
+
+3. This application also requires the installation and configuration of an SMTP server on your OS
+First run the following commands to install the necessary dependencies:
+sudo apt-get install msmtp msmtp-mta
+sudo apt-get install mailutils
+Now to configure it:
+sudo nano /etc/msmtprc
+Paste The Following lines:
+***START OF PASTE DO NOT INCLUDE THIS LINE***
+
+# Generics
+defaults
+auth           on
+tls            on
+
+# following is different from ssmtp:
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+# user specific log location, otherwise use /var/log/msmtp.log, however,
+# this will create an access violation if you are user pi, and have not changes the access rights
+logfile        ~/.msmtp.log
+
+# Gmail specifics
+account        gmail
+host           smtp.gmail.com
+port           587
+from          group45cs3307@gmail.com
+user           group45cs3307@gmail.com
+password       fNf8Kr8wZD
+
+# Default
+account default : gmail
+
+***END OF PASTE DO NOT INCLUDE THIS LINE***
+
+4. This application also reuquires a local installation of mysql to create a local database. 
+To install mysql execute the following commands: 
+sudo apt update 
+sudo apt upgrade
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+
+To log into mysql execute the following: 
+to login into local mysql
+sudo mysql -u root -p
+mysql -u root -p quickgracker < file.sql
+
+5. Download the QuickTrack.zip folder to your Debian System
+
+6. Extract the all files into a single directory of your choice
+
+7. Navigate to the directory you extracted these files to
+
+8. Compile the program in the terminal by using the following command:
+make quicktrack
+
+9. To run the program in your terminal, type
+    ./quicktrack
+
+10. Remove the executable from your system by using the following command (note: this will require you to recompile if you want to run the program again):
+	make clean
+==============================================================================================================================================================================================================================
+
+==============================================================================================================================================================================================================================
+Using QuickTrack
+-----------------
+The launch screen offers three menus. 
+1. Business menu 
+	1.1 The busniess mneu offers functionality to businesses using the software. This menu offers the following options: 
+		1.1.1 Sign In a Customer - Businesses have the option to sign in customers with their unique account ID or if the customer does not have a unique ID the business can also sign them in following prompts for their information.
+		1.1.2 Sign Out a Customer - Businesses have the option to sign out customers with their unique account ID or following the prompts for customer information
+		1.1.3 Notify Customers of Exposure Incidence - Businesses can send an email to customers notifying them of a possible exposure. After entering in a possible incidence date, an email will be sent to all customers that attended the business on that day 
+		1.1.4 Get Customers In Store - Businesses can get a number of the customers currently in their store for capacity tracking purposes.
+2. Customer menu 
+	2.1 Customers that are not registered and do not have a unique ID can register themselves through this menu. 
+3. Admin menu
+	3.1 This menu is for owners or administrators of the software. 
+	3.2 After providing the correct log in credentials, administrators can add new businesses to the database, which will allow the business access to the business menu. 
+3. Quit Program
+	The program can be quit at any point by entering q.
+
+Viewing Results for Businesses
+------------------------------
+Customers are stored in the tbl_customers. The customer_id is assigned by the server. customer_username and customer_password are not mandatory inputs and therefore may appear as blank and NULL.
+Sign In and Sign Out information is stored in the tbl_SignInOut. Timestamps for SIO_timeIn and SIO_timeOut are generated by the server. SIO_id is a unique id for each entry. 
+SIO_userID is a foreign key referencing tbl_customers. SIO_businessID is a foreign key referencing tbl_businesses. SIO_firstName, SIO_lastName, SIO_email, and SIO_phoneNumber are not mandatory fields and may appear as NULL.
+
+Viewing Results for Admins
+---------------------------
+Businesses added to the database can be viewed in tbl_businesses. 
+==============================================================================================================================================================================================================================
+
+==============================================================================================================================================================================================================================
+Gmail Account to Test Email Send and Recieve
+--------------------------------------------
+group45cs3307@gmail.com
+fNf8Kr8wZD
+By logging into this email, you are agreeing to not change or alter any information of the account. 
+This account is the property of Evan Makris, Braikhna Yousafzai, Abdulrahim Hamed, Jem Parlakyigit, and Colin Stoddart and is being shared with Reco King and Mike Katchabaw for the purpose of educational assesment of the CS3307A (Fall 2020) group assignment.
+This Email will be deleted January 11, 2021.
+
+Database Server Login Info
+--------------------------
+Login Link: http://www.phpmyadmin.co/sql.php?server=1&db=sql9372596&table=tbl_customers&pos=0
+Server: sql9.freemysqlhosting.net
+Username: sql9372596
+Password: fNf8Kr8wZD
+
+By logging into this server, you are agreeing to not change or alter any information of the account. 
+This account is the property of Evan Makris, Braikhna Yousafzai, Abdulrahim Hamed, Jem Parlakyigit, and Colin Stoddart and is being shared with Reco King and Mike Katchabaw for the purpose of educational assesment of the CS3307A (Fall 2020) group assignment.
+This Server and Database will be deleted January 11, 2021.
+
+Database Server Info (For coding purposes only)
+-----------------------------------------------
+Server Address: sql9.freemysqlhosting.net
+Server Name: sql9372596
+Port number: 3306
+
+By logging into this server, you are agreeing to not change or alter any information of the account. 
+This account is the property of Evan Makris, Braikhna Yousafzai, Abdulrahim Hamed, Jem Parlakyigit, and Colin Stoddart and is being shared with Reco King and Mike Katchabaw for the purpose of educational assesment of the CS3307A (Fall 2020) group assignment.
+This Server and Database will be deleted January 11, 2021.
+==============================================================================================================================================================================================================================

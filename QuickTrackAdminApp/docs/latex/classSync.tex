@@ -1,0 +1,114 @@
+\hypertarget{classSync}{}\doxysection{Sync Class Reference}
+\label{classSync}\index{Sync@{Sync}}
+
+
+This class is to sync between the offline and remote databases.  
+
+
+
+
+{\ttfamily \#include $<$Sync.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSync_a5e75eda3265c599400c8cb203fb0c91c}{Sync}} ()
+\begin{DoxyCompactList}\small\item\em Empty Constructor that creates a connection between the local and remote server. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classtempUser}{temp\+User}} $>$ \mbox{\hyperlink{classSync_a9756268de78823f22130eebc08ab52d4}{local\+Sign\+In\+Out}} ()
+\begin{DoxyCompactList}\small\item\em It create a list of entries from local database server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSync_aeaa8e9dc58cb4199bcf01efb7ec8cc8e}{export\+Sign\+In\+Out}} (vector$<$ \mbox{\hyperlink{classtempUser}{temp\+User}} $>$)
+\begin{DoxyCompactList}\small\item\em Exports data from local server and moves it to remote server. It also removes synced data from local server by using \mbox{\hyperlink{classSync_a5b2edc6a235cf08245d0c065663e0936}{delete\+Local\+Sign\+In\+Out(int id)}} method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSync_a5b2edc6a235cf08245d0c065663e0936}{delete\+Local\+Sign\+In\+Out}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes synced entries from local database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDatabase}{Database}} \mbox{\hyperlink{classSync_abfc4412c31ef29aeac51565877712a42}{local}}
+\item 
+\mbox{\hyperlink{classDatabase}{Database}} \mbox{\hyperlink{classSync_ac15e8fc71289164dae18939d03404e03}{remote}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classSync_a56e1de0b312ab6c244b27f0567d73b2f}{local\+User\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is to sync between the offline and remote databases. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSync_a5e75eda3265c599400c8cb203fb0c91c}\label{classSync_a5e75eda3265c599400c8cb203fb0c91c}} 
+\index{Sync@{Sync}!Sync@{Sync}}
+\index{Sync@{Sync}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{Sync()}{Sync()}}
+{\footnotesize\ttfamily Sync\+::\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty Constructor that creates a connection between the local and remote server. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSync_a5b2edc6a235cf08245d0c065663e0936}\label{classSync_a5b2edc6a235cf08245d0c065663e0936}} 
+\index{Sync@{Sync}!deleteLocalSignInOut@{deleteLocalSignInOut}}
+\index{deleteLocalSignInOut@{deleteLocalSignInOut}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{deleteLocalSignInOut()}{deleteLocalSignInOut()}}
+{\footnotesize\ttfamily void Sync\+::delete\+Local\+Sign\+In\+Out (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Removes synced entries from local database. 
+
+\mbox{\Hypertarget{classSync_aeaa8e9dc58cb4199bcf01efb7ec8cc8e}\label{classSync_aeaa8e9dc58cb4199bcf01efb7ec8cc8e}} 
+\index{Sync@{Sync}!exportSignInOut@{exportSignInOut}}
+\index{exportSignInOut@{exportSignInOut}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{exportSignInOut()}{exportSignInOut()}}
+{\footnotesize\ttfamily void Sync\+::export\+Sign\+In\+Out (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classtempUser}{temp\+User}} $>$}]{customers }\end{DoxyParamCaption})}
+
+
+
+Exports data from local server and moves it to remote server. It also removes synced data from local server by using \mbox{\hyperlink{classSync_a5b2edc6a235cf08245d0c065663e0936}{delete\+Local\+Sign\+In\+Out(int id)}} method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Temp\+User} & A vector$<$tempuser$>$ version of a list of temp user objects \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSync_a9756268de78823f22130eebc08ab52d4}\label{classSync_a9756268de78823f22130eebc08ab52d4}} 
+\index{Sync@{Sync}!localSignInOut@{localSignInOut}}
+\index{localSignInOut@{localSignInOut}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{localSignInOut()}{localSignInOut()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classtempUser}{temp\+User}} $>$ Sync\+::local\+Sign\+In\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It create a list of entries from local database server. 
+
+\begin{DoxyReturn}{Returns}
+list of entries from local database 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSync_abfc4412c31ef29aeac51565877712a42}\label{classSync_abfc4412c31ef29aeac51565877712a42}} 
+\index{Sync@{Sync}!local@{local}}
+\index{local@{local}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{local}{local}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDatabase}{Database}} Sync\+::local}
+
+\mbox{\Hypertarget{classSync_a56e1de0b312ab6c244b27f0567d73b2f}\label{classSync_a56e1de0b312ab6c244b27f0567d73b2f}} 
+\index{Sync@{Sync}!localUserID@{localUserID}}
+\index{localUserID@{localUserID}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{localUserID}{localUserID}}
+{\footnotesize\ttfamily vector$<$int$>$ Sync\+::local\+User\+ID}
+
+\mbox{\Hypertarget{classSync_ac15e8fc71289164dae18939d03404e03}\label{classSync_ac15e8fc71289164dae18939d03404e03}} 
+\index{Sync@{Sync}!remote@{remote}}
+\index{remote@{remote}!Sync@{Sync}}
+\doxysubsubsection{\texorpdfstring{remote}{remote}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDatabase}{Database}} Sync\+::remote}
+

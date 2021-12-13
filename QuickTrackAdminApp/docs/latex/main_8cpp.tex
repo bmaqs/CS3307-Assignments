@@ -1,0 +1,205 @@
+\hypertarget{main_8cpp}{}\doxysection{Quick\+Track\+App/main.cpp File Reference}
+\label{main_8cpp}\index{QuickTrackApp/main.cpp@{QuickTrackApp/main.cpp}}
+{\ttfamily \#include \char`\"{}Customer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sign\+In\+Out.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Business.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Customer\+Database.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Business\+Database.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Database.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Notify\+Customers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Admin.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a41a92df7953b5aa622d135c3080bfaf5}{log\+In\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em The first menu which is the log in screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ac676acb3a63a93ecc3a2364d8702cc93}{customer\+Menu}} (\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} db)
+\begin{DoxyCompactList}\small\item\em The menu that allows for customers to register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a7b0660382cbaef5757367aece0f1b04b}{sign\+In}} (int flag, string F, string L, string P, string E, int A, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} db, int business\+ID)
+\begin{DoxyCompactList}\small\item\em The sign in menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a2647da79d233d15536b4e4c9ec5cf2f9}{sign\+Out}} (int flag, string F, string L, string P, string E, int A, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} db, int business\+ID)
+\begin{DoxyCompactList}\small\item\em The sign out menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ac135a1420613e36691fdf42776a833e7}{email\+Exposure}} (int y, int m, int d)
+\begin{DoxyCompactList}\small\item\em The menu for emailing exposed customers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_adb951fad17d08f7a20dde0a89278a4f7}{business\+Menu}} (\mbox{\hyperlink{classBusinessDatabase}{Business\+Database}} business\+DB, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer\+DB)
+\begin{DoxyCompactList}\small\item\em The menu that allows admins to select a buisness. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a8dab37b3eae582fa559eb5470562bff7}{admin\+Menu}} (\mbox{\hyperlink{classBusinessDatabase}{Business\+Database}} db)
+\begin{DoxyCompactList}\small\item\em The admin menu to add new businesses. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em This is the main of the code and allows users to select from and display menus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a8dab37b3eae582fa559eb5470562bff7}\label{main_8cpp_a8dab37b3eae582fa559eb5470562bff7}} 
+\index{main.cpp@{main.cpp}!adminMenu@{adminMenu}}
+\index{adminMenu@{adminMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{adminMenu()}{adminMenu()}}
+{\footnotesize\ttfamily int admin\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusinessDatabase}{Business\+Database}}}]{db }\end{DoxyParamCaption})}
+
+
+
+The admin menu to add new businesses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & A \mbox{\hyperlink{classBusinessDatabase}{Business\+Database}} object representing the buisness database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the users selection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_adb951fad17d08f7a20dde0a89278a4f7}\label{main_8cpp_adb951fad17d08f7a20dde0a89278a4f7}} 
+\index{main.cpp@{main.cpp}!businessMenu@{businessMenu}}
+\index{businessMenu@{businessMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{businessMenu()}{businessMenu()}}
+{\footnotesize\ttfamily int business\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusinessDatabase}{Business\+Database}}}]{business\+DB,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer\+DB }\end{DoxyParamCaption})}
+
+
+
+The menu that allows admins to select a buisness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buisness\+DB} & A \mbox{\hyperlink{classBusinessDatabase}{Business\+Database}} object representing the buisness database \\
+\hline
+{\em customer\+DB} & A customer\+Database object representing the customer database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the users selection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ac676acb3a63a93ecc3a2364d8702cc93}\label{main_8cpp_ac676acb3a63a93ecc3a2364d8702cc93}} 
+\index{main.cpp@{main.cpp}!customerMenu@{customerMenu}}
+\index{customerMenu@{customerMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{customerMenu()}{customerMenu()}}
+{\footnotesize\ttfamily int customer\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{db }\end{DoxyParamCaption})}
+
+
+
+The menu that allows for customers to register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & A \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} object representing the customer database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the customers ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ac135a1420613e36691fdf42776a833e7}\label{main_8cpp_ac135a1420613e36691fdf42776a833e7}} 
+\index{main.cpp@{main.cpp}!emailExposure@{emailExposure}}
+\index{emailExposure@{emailExposure}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{emailExposure()}{emailExposure()}}
+{\footnotesize\ttfamily void email\+Exposure (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{m,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+The menu for emailing exposed customers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & An int representing the year \\
+\hline
+{\em m} & An int representing the month \\
+\hline
+{\em d} & An int representing the day \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a41a92df7953b5aa622d135c3080bfaf5}\label{main_8cpp_a41a92df7953b5aa622d135c3080bfaf5}} 
+\index{main.cpp@{main.cpp}!logInMenu@{logInMenu}}
+\index{logInMenu@{logInMenu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{logInMenu()}{logInMenu()}}
+{\footnotesize\ttfamily int log\+In\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The first menu which is the log in screen. 
+
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the users selection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is the main of the code and allows users to select from and display menus. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{main_8cpp_a7b0660382cbaef5757367aece0f1b04b}\label{main_8cpp_a7b0660382cbaef5757367aece0f1b04b}} 
+\index{main.cpp@{main.cpp}!signIn@{signIn}}
+\index{signIn@{signIn}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{signIn()}{signIn()}}
+{\footnotesize\ttfamily void sign\+In (\begin{DoxyParamCaption}\item[{int}]{flag,  }\item[{string}]{F,  }\item[{string}]{L,  }\item[{string}]{P,  }\item[{string}]{E,  }\item[{int}]{A,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{db,  }\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+The sign in menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & An int representing weather the user has an account or not \\
+\hline
+{\em F} & A string representing the users first name \\
+\hline
+{\em L} & A string representing the users last name \\
+\hline
+{\em P} & A string representing the users phone number \\
+\hline
+{\em E} & A string representing the users Email \\
+\hline
+{\em A} & An Int representing the customers ID \\
+\hline
+{\em db} & A \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} object representing the customer database \\
+\hline
+{\em business\+ID} & An Int representing the \mbox{\hyperlink{classBusiness}{Business}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the users selection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a2647da79d233d15536b4e4c9ec5cf2f9}\label{main_8cpp_a2647da79d233d15536b4e4c9ec5cf2f9}} 
+\index{main.cpp@{main.cpp}!signOut@{signOut}}
+\index{signOut@{signOut}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{signOut()}{signOut()}}
+{\footnotesize\ttfamily void sign\+Out (\begin{DoxyParamCaption}\item[{int}]{flag,  }\item[{string}]{F,  }\item[{string}]{L,  }\item[{string}]{P,  }\item[{string}]{E,  }\item[{int}]{A,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{db,  }\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+The sign out menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & An int representing weather the user has an account or not \\
+\hline
+{\em F} & A string representing the users first name \\
+\hline
+{\em L} & A string representing the users last name \\
+\hline
+{\em P} & A string representing the users phone number \\
+\hline
+{\em E} & A string representing the users Email \\
+\hline
+{\em A} & An Int representing the customers ID \\
+\hline
+{\em db} & A \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} object representing the customer database \\
+\hline
+{\em business\+ID} & An Int representing the \mbox{\hyperlink{classBusiness}{Business}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Int corresponding to the users selection 
+\end{DoxyReturn}

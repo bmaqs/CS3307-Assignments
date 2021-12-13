@@ -1,0 +1,24 @@
+#ifndef CUSTOMERDATABASE_H
+#define CUSTOMERDATABASE_H
+#include "Database.h"
+#include "Customer.h"
+#include <vector>
+
+
+using namespace std;
+
+class CustomerDatabase:public Database{
+	public:
+        inline CustomerDatabase(string serverName, string userName, string password);
+		Customer selectCustomer (string userEmail);
+		Customer selectCustomer (int uniqueID);
+		int searchCustomer (string username);
+		int searchCustomer (int id);
+		vector<Customer> selectCustomers(string userEmail[], int arrSize);
+		vector<Customer> selectCustomers(int uniqueID[], int arrSize);
+		void addCustomer(Customer user);
+		Customer updateUniqueID (Customer user);
+		vector<Customer> getAll();
+};
+#endif
+

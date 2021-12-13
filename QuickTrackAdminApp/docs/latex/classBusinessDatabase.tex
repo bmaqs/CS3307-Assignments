@@ -1,0 +1,309 @@
+\hypertarget{classBusinessDatabase}{}\doxysection{Business\+Database Class Reference}
+\label{classBusinessDatabase}\index{BusinessDatabase@{BusinessDatabase}}
+
+
+The functions allow businesses to be registered and queried on the database.  
+
+
+
+
+{\ttfamily \#include $<$Business\+Database.\+h$>$}
+
+Inheritance diagram for Business\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBusinessDatabase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusinessDatabase_a311d7b3793004e8a3d276bb470d806ee}{Business\+Database}} (string server\+Name, string user\+Name, string password)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classDatabase}{Database}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classDatabase}{Database}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classBusinessDatabase_ae6dfeab65a71e57de4235c881c38081b}{select\+Business}} (int business\+ID)
+\begin{DoxyCompactList}\small\item\em selects a business from the database based on business ID \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusinessDatabase_accc7bfdaccc9e4224268533f2b55bcc1}{search\+Business}} (string name)
+\begin{DoxyCompactList}\small\item\em searches the business database based on the name of the business \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classBusiness}{Business}} $>$ \mbox{\hyperlink{classBusinessDatabase_afedacabc5421439fb94aa7eb3bbc8cc9}{select\+Businesses}} (vector$<$ int $>$ business\+IDList)
+\begin{DoxyCompactList}\small\item\em gets a list of \mbox{\hyperlink{classBusiness}{Business}} objects from a list of unique business IDs \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBusinessDatabase_a87d5510c758d8431ca9bd1c2018f5b24}{add\+Business}} (\mbox{\hyperlink{classBusiness}{Business}} business)
+\begin{DoxyCompactList}\small\item\em Adds a new business to the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classBusinessDatabase_a0fdd6d8fa930aac663d61950005f67fe}{update\+Business\+ID}} (\mbox{\hyperlink{classBusiness}{Business}} business)
+\begin{DoxyCompactList}\small\item\em updates the unique business ID for a \mbox{\hyperlink{classBusiness}{Business}} object based on the assigned ID in the database \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusinessDatabase_a5d78845977aa8c2f3acebe8af66b0326}{search\+Admin}} (string name, int business\+ID)
+\begin{DoxyCompactList}\small\item\em This method determines if an admin usernamne exists for a given business ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBusinessDatabase_a86847d90c8ca6583fe362cb0fb580cb4}{add\+Admin}} (\mbox{\hyperlink{classAdmin}{Admin}} admin)
+\begin{DoxyCompactList}\small\item\em This method adds an admin to the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBusinessDatabase_aa9a0d15c1f8aaa2fcb66943f086b9a81}{check\+Admin\+Login}} (\mbox{\hyperlink{classAdmin}{Admin}} admin)
+\begin{DoxyCompactList}\small\item\em This method checks an admin\textquotesingle{}s log in information against the credentials stored in the database for that admin. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classBusiness}{Business}} $>$ \mbox{\hyperlink{classBusinessDatabase_ab0585a93bde0de5b912b1ae8d8eacbc4}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the businesses stored in the database. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classBusinessDatabase_ad664ef73ac82c011aa9fc46c14e8d0ed}{get\+Two\+Week\+Customers}} (\mbox{\hyperlink{classBusiness}{Business}} business)
+\begin{DoxyCompactList}\small\item\em This method gets a list of the customer IDs for customers that have been in a business in the last 14 days. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classBusinessDatabase_a13bc756657ee79c849974344a304efbc}{get\+Customers\+In\+Store}} (\mbox{\hyperlink{classBusiness}{Business}} business)
+\begin{DoxyCompactList}\small\item\em This method returns a list of customer IDs for the customers currently in store for a given business. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAdmin}{Admin}} \mbox{\hyperlink{classBusinessDatabase_a8f46c4def8afb6938608a583e12cc158}{update\+Admin\+ID}} (\mbox{\hyperlink{classAdmin}{Admin}} admin)
+\begin{DoxyCompactList}\small\item\em this method updates the admin ID for an admin \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The functions allow businesses to be registered and queried on the database. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusinessDatabase_a311d7b3793004e8a3d276bb470d806ee}\label{classBusinessDatabase_a311d7b3793004e8a3d276bb470d806ee}} 
+\index{BusinessDatabase@{BusinessDatabase}!BusinessDatabase@{BusinessDatabase}}
+\index{BusinessDatabase@{BusinessDatabase}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{BusinessDatabase()}{BusinessDatabase()}}
+{\footnotesize\ttfamily Business\+Database\+::\+Business\+Database (\begin{DoxyParamCaption}\item[{string}]{server\+Name,  }\item[{string}]{user\+Name,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classDatabase}{Database}}\+:\+: \mbox{\hyperlink{classBusiness}{Business}} \mbox{\hyperlink{classDatabase}{Database}} object. 
+
+Creates the database object
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Name} & string -\/ database server name \\
+\hline
+{\em user\+Name} & string -\/ database user\textquotesingle{}s username \\
+\hline
+{\em password} & string -\/ database user\textquotesingle{}s password \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusinessDatabase_a86847d90c8ca6583fe362cb0fb580cb4}\label{classBusinessDatabase_a86847d90c8ca6583fe362cb0fb580cb4}} 
+\index{BusinessDatabase@{BusinessDatabase}!addAdmin@{addAdmin}}
+\index{addAdmin@{addAdmin}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{addAdmin()}{addAdmin()}}
+{\footnotesize\ttfamily bool Business\+Database\+::add\+Admin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAdmin}{Admin}}}]{admin }\end{DoxyParamCaption})}
+
+
+
+This method adds an admin to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em admin} & \mbox{\hyperlink{classAdmin}{Admin}} -\/ an admin to be added to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Bool -\/ the admin was successfully added 
+
+false Bool -\/ the admin was not added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_a87d5510c758d8431ca9bd1c2018f5b24}\label{classBusinessDatabase_a87d5510c758d8431ca9bd1c2018f5b24}} 
+\index{BusinessDatabase@{BusinessDatabase}!addBusiness@{addBusiness}}
+\index{addBusiness@{addBusiness}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{addBusiness()}{addBusiness()}}
+{\footnotesize\ttfamily bool Business\+Database\+::add\+Business (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusiness}{Business}}}]{business }\end{DoxyParamCaption})}
+
+
+
+Adds a new business to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business} & \mbox{\hyperlink{classBusiness}{Business}} -\/ a new business to be added to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Bool -\/ business was added 
+
+false Bool -\/ business was not added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_aa9a0d15c1f8aaa2fcb66943f086b9a81}\label{classBusinessDatabase_aa9a0d15c1f8aaa2fcb66943f086b9a81}} 
+\index{BusinessDatabase@{BusinessDatabase}!checkAdminLogin@{checkAdminLogin}}
+\index{checkAdminLogin@{checkAdminLogin}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{checkAdminLogin()}{checkAdminLogin()}}
+{\footnotesize\ttfamily bool Business\+Database\+::check\+Admin\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAdmin}{Admin}}}]{admin }\end{DoxyParamCaption})}
+
+
+
+This method checks an admin\textquotesingle{}s log in information against the credentials stored in the database for that admin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em admin} & \mbox{\hyperlink{classAdmin}{Admin}} -\/ an admin object with stored log in information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Bool -\/ Success. The log in information matches whats in the database 
+
+false Bool -\/ Failure. The log in information does not match whats in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_ab0585a93bde0de5b912b1ae8d8eacbc4}\label{classBusinessDatabase_ab0585a93bde0de5b912b1ae8d8eacbc4}} 
+\index{BusinessDatabase@{BusinessDatabase}!getAll@{getAll}}
+\index{getAll@{getAll}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classBusiness}{Business}} $>$ Business\+Database\+::get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the businesses stored in the database. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Business$>$ -\/ a list of \mbox{\hyperlink{classBusiness}{Business}} objects containing all the businesses in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_a13bc756657ee79c849974344a304efbc}\label{classBusinessDatabase_a13bc756657ee79c849974344a304efbc}} 
+\index{BusinessDatabase@{BusinessDatabase}!getCustomersInStore@{getCustomersInStore}}
+\index{getCustomersInStore@{getCustomersInStore}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{getCustomersInStore()}{getCustomersInStore()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Business\+Database\+::get\+Customers\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusiness}{Business}}}]{business }\end{DoxyParamCaption})}
+
+
+
+This method returns a list of customer IDs for the customers currently in store for a given business. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business} & \mbox{\hyperlink{classBusiness}{Business}} -\/ the business being queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$int$>$ -\/ a list of customer IDs for customers currently in store 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_ad664ef73ac82c011aa9fc46c14e8d0ed}\label{classBusinessDatabase_ad664ef73ac82c011aa9fc46c14e8d0ed}} 
+\index{BusinessDatabase@{BusinessDatabase}!getTwoWeekCustomers@{getTwoWeekCustomers}}
+\index{getTwoWeekCustomers@{getTwoWeekCustomers}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{getTwoWeekCustomers()}{getTwoWeekCustomers()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Business\+Database\+::get\+Two\+Week\+Customers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusiness}{Business}}}]{business }\end{DoxyParamCaption})}
+
+
+
+This method gets a list of the customer IDs for customers that have been in a business in the last 14 days. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business} & \mbox{\hyperlink{classBusiness}{Business}} -\/ the business that is being queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$int$>$ -\/ A list of customer IDs for customers that have been in the business in the last 14 days 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_a5d78845977aa8c2f3acebe8af66b0326}\label{classBusinessDatabase_a5d78845977aa8c2f3acebe8af66b0326}} 
+\index{BusinessDatabase@{BusinessDatabase}!searchAdmin@{searchAdmin}}
+\index{searchAdmin@{searchAdmin}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{searchAdmin()}{searchAdmin()}}
+{\footnotesize\ttfamily int Business\+Database\+::search\+Admin (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+This method determines if an admin usernamne exists for a given business ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string -\/ the admin username \\
+\hline
+{\em business\+ID} & int -\/ the business ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ The number of times the username occurs for the given business ID in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_accc7bfdaccc9e4224268533f2b55bcc1}\label{classBusinessDatabase_accc7bfdaccc9e4224268533f2b55bcc1}} 
+\index{BusinessDatabase@{BusinessDatabase}!searchBusiness@{searchBusiness}}
+\index{searchBusiness@{searchBusiness}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{searchBusiness()}{searchBusiness()}}
+{\footnotesize\ttfamily int Business\+Database\+::search\+Business (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+searches the business database based on the name of the business 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string -\/ the name of the business \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ returns the number of results matching the business name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_ae6dfeab65a71e57de4235c881c38081b}\label{classBusinessDatabase_ae6dfeab65a71e57de4235c881c38081b}} 
+\index{BusinessDatabase@{BusinessDatabase}!selectBusiness@{selectBusiness}}
+\index{selectBusiness@{selectBusiness}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{selectBusiness()}{selectBusiness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusiness}{Business}} Business\+Database\+::select\+Business (\begin{DoxyParamCaption}\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+selects a business from the database based on business ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business\+ID} & int -\/ the unique business ID for the business \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classBusiness}{Business}} -\/ returns a business object related to the unique business ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_afedacabc5421439fb94aa7eb3bbc8cc9}\label{classBusinessDatabase_afedacabc5421439fb94aa7eb3bbc8cc9}} 
+\index{BusinessDatabase@{BusinessDatabase}!selectBusinesses@{selectBusinesses}}
+\index{selectBusinesses@{selectBusinesses}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{selectBusinesses()}{selectBusinesses()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classBusiness}{Business}} $>$ Business\+Database\+::select\+Businesses (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{business\+IDList }\end{DoxyParamCaption})}
+
+
+
+gets a list of \mbox{\hyperlink{classBusiness}{Business}} objects from a list of unique business IDs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business\+IDList} & vector$<$int$>$ -\/ a list of unique business IDs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Business$>$ -\/ a list of \mbox{\hyperlink{classBusiness}{Business}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_a8f46c4def8afb6938608a583e12cc158}\label{classBusinessDatabase_a8f46c4def8afb6938608a583e12cc158}} 
+\index{BusinessDatabase@{BusinessDatabase}!updateAdminID@{updateAdminID}}
+\index{updateAdminID@{updateAdminID}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{updateAdminID()}{updateAdminID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAdmin}{Admin}} Business\+Database\+::update\+Admin\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAdmin}{Admin}}}]{admin }\end{DoxyParamCaption})}
+
+
+
+this method updates the admin ID for an admin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em admin} & \mbox{\hyperlink{classAdmin}{Admin}} -\/ the admin without an updated admin ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAdmin}{Admin}} -\/ the admin with an updated admin ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusinessDatabase_a0fdd6d8fa930aac663d61950005f67fe}\label{classBusinessDatabase_a0fdd6d8fa930aac663d61950005f67fe}} 
+\index{BusinessDatabase@{BusinessDatabase}!updateBusinessID@{updateBusinessID}}
+\index{updateBusinessID@{updateBusinessID}!BusinessDatabase@{BusinessDatabase}}
+\doxysubsubsection{\texorpdfstring{updateBusinessID()}{updateBusinessID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusiness}{Business}} Business\+Database\+::update\+Business\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusiness}{Business}}}]{business }\end{DoxyParamCaption})}
+
+
+
+updates the unique business ID for a \mbox{\hyperlink{classBusiness}{Business}} object based on the assigned ID in the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em business} & \mbox{\hyperlink{classBusiness}{Business}} -\/ a business object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classBusiness}{Business}} -\/ a business object with an updated business ID 
+\end{DoxyReturn}

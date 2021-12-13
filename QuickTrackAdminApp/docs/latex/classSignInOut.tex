@@ -1,0 +1,153 @@
+\hypertarget{classSignInOut}{}\doxysection{Sign\+In\+Out Class Reference}
+\label{classSignInOut}\index{SignInOut@{SignInOut}}
+
+
+This class extends the database class and allows for sign in and sign out of customers.  
+
+
+
+
+{\ttfamily \#include $<$Sign\+In\+Out.\+h$>$}
+
+Inheritance diagram for Sign\+In\+Out\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSignInOut}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}{Sign\+In\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Empty Constructor for the sign in and out class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignInOut_a968b998c6c19ccd33eed2b45f1ef6756}{Sign\+In}} (int customer\+ID, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs in a customer to the database who has an account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignInOut_a6c3e62d87f28c5fd73cc9ca09af2a975}{Sign\+In}} (int customer\+ID, string first\+Name, string last\+Name, long int phone\+Number, string \mbox{\hyperlink{NotifyCustomers_8cpp_a0e4fc5e980e7b45bb3b201c274b041ed}{email}}, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs in a customer to the database who does not have an account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignInOut_a6e0a374d20dbaecdb2e5be2f8d59a6d2}{Sign\+Out}} (int customer\+ID, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs out a customer from the database. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classSignInOut_a8bd39bceea2e5f15b3bbd5cdde33c380}{find\+Emails}} (string in\+Time, string out\+Time, int business\+ID)
+\begin{DoxyCompactList}\small\item\em Finds emails that fall within a specified range of time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class extends the database class and allows for sign in and sign out of customers. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}\label{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}} 
+\index{SignInOut@{SignInOut}!SignInOut@{SignInOut}}
+\index{SignInOut@{SignInOut}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignInOut()}{SignInOut()}}
+{\footnotesize\ttfamily Sign\+In\+Out\+::\+Sign\+In\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty Constructor for the sign in and out class. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classSignInOut}{Sign\+In\+Out}} object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignInOut_a8bd39bceea2e5f15b3bbd5cdde33c380}\label{classSignInOut_a8bd39bceea2e5f15b3bbd5cdde33c380}} 
+\index{SignInOut@{SignInOut}!findEmails@{findEmails}}
+\index{findEmails@{findEmails}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{findEmails()}{findEmails()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Sign\+In\+Out\+::find\+Emails (\begin{DoxyParamCaption}\item[{string}]{in\+Time,  }\item[{string}]{out\+Time,  }\item[{int}]{business\+ID }\end{DoxyParamCaption})}
+
+
+
+Finds emails that fall within a specified range of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Time} & The time to start checking from \\
+\hline
+{\em out\+Time} & The time to stop checking from \\
+\hline
+{\em business\+ID} & The business to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ List of emails that fall within that range of time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSignInOut_a968b998c6c19ccd33eed2b45f1ef6756}\label{classSignInOut_a968b998c6c19ccd33eed2b45f1ef6756}} 
+\index{SignInOut@{SignInOut}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sign\+In\+Out\+::\+Sign\+In (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs in a customer to the database who has an account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignInOut_a6c3e62d87f28c5fd73cc9ca09af2a975}\label{classSignInOut_a6c3e62d87f28c5fd73cc9ca09af2a975}} 
+\index{SignInOut@{SignInOut}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sign\+In\+Out\+::\+Sign\+In (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{long int}]{phone\+Number,  }\item[{string}]{email,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs in a customer to the database who does not have an account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em first\+Name} & A String representaion of the customers first name \\
+\hline
+{\em last\+Name} & A String representaion of the customers last name \\
+\hline
+{\em phone\+Number} & A Long Int representaion of the customers phone number \\
+\hline
+{\em email} & A String representaion of the customers email \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignInOut_a6e0a374d20dbaecdb2e5be2f8d59a6d2}\label{classSignInOut_a6e0a374d20dbaecdb2e5be2f8d59a6d2}} 
+\index{SignInOut@{SignInOut}!SignOut@{SignOut}}
+\index{SignOut@{SignOut}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignOut()}{SignOut()}}
+{\footnotesize\ttfamily void Sign\+In\+Out\+::\+Sign\+Out (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs out a customer from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}

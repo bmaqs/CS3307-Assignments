@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/qtrack_logo_text_sidebyside.png</file>
+        <file>images/qTrack_logo_only.png</file>
+        <file>images/qtrack_logo.png</file>
+        <file>images/Logo_beside_text.svg</file>
+    </qresource>
+</RCC>

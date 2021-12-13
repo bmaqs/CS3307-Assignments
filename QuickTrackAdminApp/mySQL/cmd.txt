@@ -1,0 +1,23 @@
+sudo apt-get install libmysqlcppconn-dev
+g++ -I ./lib/include/jdbc/cppconn Database.cpp -L ./lib/lib -lmysqlcppconn
+
+//if you wan to install mysqlConnection
+$ git clone https://github.com/mysql/mysql-connector-cpp.git
+$ cd mysql-connector-cpp
+$ git checkout 8.0
+$ mkdir build
+$ cd build
+# The problem is here: CMAKE_BUILD_TYPE default value is Debug
+# so it install .so in WITH_CONCPP/lib64/debug. 
+$ cmake -DCMAKE_BUILD_TYPE=Release ..
+# I don't know why the options "--config Debug( or Release)" is disable.
+$ cmake --build .
+$ sudo cmake --build . --target install
+$ cmake -DWITH_CONCPP=/usr/local/mysql/connector-c++-8.0 ../testapp
+
+//Server Info
+Server: sql9.freemysqlhosting.net
+Name: sql9372596
+Username: sql9372596
+Password: fNf8Kr8wZD
+Port number: 3306

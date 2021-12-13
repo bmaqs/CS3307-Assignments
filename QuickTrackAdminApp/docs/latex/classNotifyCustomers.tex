@@ -1,0 +1,73 @@
+\hypertarget{classNotifyCustomers}{}\doxysection{Notify\+Customers Class Reference}
+\label{classNotifyCustomers}\index{NotifyCustomers@{NotifyCustomers}}
+
+
+This class allows is responsible for sending email notifications to customers.  
+
+
+
+
+{\ttfamily \#include $<$Notify\+Customers.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classNotifyCustomers_a93cd0bfcfb97b1072c3b1e5072a97707}{send\+Email}} (vector$<$ string $>$ emails, string subject, string msg)
+\begin{DoxyCompactList}\small\item\em Sends an email to a list of emails. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classNotifyCustomers_a9ca8c92466321b1a0fe6fcb7f147bbca}{send\+Email}} (vector$<$ string $>$ emails, string msg)
+\begin{DoxyCompactList}\small\item\em Sends an email to a list of emails. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class allows is responsible for sending email notifications to customers. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNotifyCustomers_a9ca8c92466321b1a0fe6fcb7f147bbca}\label{classNotifyCustomers_a9ca8c92466321b1a0fe6fcb7f147bbca}} 
+\index{NotifyCustomers@{NotifyCustomers}!sendEmail@{sendEmail}}
+\index{sendEmail@{sendEmail}!NotifyCustomers@{NotifyCustomers}}
+\doxysubsubsection{\texorpdfstring{sendEmail()}{sendEmail()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Notify\+Customers\+::send\+Email (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{emails,  }\item[{string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends an email to a list of emails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & A vector containing all the emails to send the message to \\
+\hline
+{\em msg} & The message to be sent to the emails \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNotifyCustomers_a93cd0bfcfb97b1072c3b1e5072a97707}\label{classNotifyCustomers_a93cd0bfcfb97b1072c3b1e5072a97707}} 
+\index{NotifyCustomers@{NotifyCustomers}!sendEmail@{sendEmail}}
+\index{sendEmail@{sendEmail}!NotifyCustomers@{NotifyCustomers}}
+\doxysubsubsection{\texorpdfstring{sendEmail()}{sendEmail()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Notify\+Customers\+::send\+Email (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{emails,  }\item[{string}]{subject,  }\item[{string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends an email to a list of emails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & A vector containing all the emails to send the message to \\
+\hline
+{\em subject} & the subject of the email \\
+\hline
+{\em msg} & The message to be sent to the emails \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,238 @@
+\hypertarget{classCustomerDatabase}{}\doxysection{Customer\+Database Class Reference}
+\label{classCustomerDatabase}\index{CustomerDatabase@{CustomerDatabase}}
+
+
+This is the class that constructs and operates directly with the customer database.  
+
+
+
+
+{\ttfamily \#include $<$Customer\+Database.\+h$>$}
+
+Inheritance diagram for Customer\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCustomerDatabase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomerDatabase_a8c79aea3c0ad9f50b1c39f8957d7d0f5}{Customer\+Database}} (string server\+Name, string user\+Name, string password)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classCustomerDatabase_af093e3410f702768472f68f110c1a016}{select\+Customer}} (string user\+Email)
+\begin{DoxyCompactList}\small\item\em Selects a single customers based on email. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classCustomerDatabase_a3e006c365c029be5a20e4ce51a4bde5b}{select\+Customer}} (int unique\+ID)
+\begin{DoxyCompactList}\small\item\em Selects a single customers based on ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCustomerDatabase_a5bc5c8659d6f72f1d6db24fae7f62af5}{search\+Customer}} (string username)
+\begin{DoxyCompactList}\small\item\em Searches for the number of customers with that username. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCustomerDatabase_acc741a607b7a4fd50a5d893ddf6816ca}{search\+Customer}} (int id)
+\begin{DoxyCompactList}\small\item\em Searches for the number of customers with that ID. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ \mbox{\hyperlink{classCustomerDatabase_a0f2d02e17218f1651e3b519f9e0e477f}{select\+Customers}} (string user\+Email\mbox{[}$\,$\mbox{]}, int arr\+Size)
+\begin{DoxyCompactList}\small\item\em Selects a list of customers based on emails. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ \mbox{\hyperlink{classCustomerDatabase_afc287702c24fe6b8b166e1d9f4b5d8da}{select\+Customers}} (vector$<$ int $>$ list\+Unique\+ID)
+\begin{DoxyCompactList}\small\item\em Selects a list of customers based on ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCustomerDatabase_a155bba0ee7d7513ba5e594c1a0d6a206}{add\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} user)
+\begin{DoxyCompactList}\small\item\em Adds a customer object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classCustomerDatabase_a8fd43b1da5aaa9c5a0931aff7db9532c}{update\+Unique\+ID}} (\mbox{\hyperlink{classCustomer}{Customer}} user)
+\begin{DoxyCompactList}\small\item\em Updates a customers unique ID. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ \mbox{\hyperlink{classCustomerDatabase_aa1c1d9b1db3dac46676d1c018e7b6dde}{get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Gets a List of all customer objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the class that constructs and operates directly with the customer database. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCustomerDatabase_a8c79aea3c0ad9f50b1c39f8957d7d0f5}\label{classCustomerDatabase_a8c79aea3c0ad9f50b1c39f8957d7d0f5}} 
+\index{CustomerDatabase@{CustomerDatabase}!CustomerDatabase@{CustomerDatabase}}
+\index{CustomerDatabase@{CustomerDatabase}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{CustomerDatabase()}{CustomerDatabase()}}
+{\footnotesize\ttfamily Customer\+Database\+::\+Customer\+Database (\begin{DoxyParamCaption}\item[{string}]{server\+Name,  }\item[{string}]{user\+Name,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Name} & A string version of the server address(name) \\
+\hline
+{\em user\+Name} & A string version of the server username \\
+\hline
+{\em password} & A string version of the server password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} Object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCustomerDatabase_a155bba0ee7d7513ba5e594c1a0d6a206}\label{classCustomerDatabase_a155bba0ee7d7513ba5e594c1a0d6a206}} 
+\index{CustomerDatabase@{CustomerDatabase}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily void Customer\+Database\+::add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Adds a customer object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & A customer object to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCustomerDatabase_aa1c1d9b1db3dac46676d1c018e7b6dde}\label{classCustomerDatabase_aa1c1d9b1db3dac46676d1c018e7b6dde}} 
+\index{CustomerDatabase@{CustomerDatabase}!getAll@{getAll}}
+\index{getAll@{getAll}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ Customer\+Database\+::get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a List of all customer objects. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Customer$>$ List of all the customers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_acc741a607b7a4fd50a5d893ddf6816ca}\label{classCustomerDatabase_acc741a607b7a4fd50a5d893ddf6816ca}} 
+\index{CustomerDatabase@{CustomerDatabase}!searchCustomer@{searchCustomer}}
+\index{searchCustomer@{searchCustomer}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{searchCustomer()}{searchCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Customer\+Database\+::search\+Customer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Searches for the number of customers with that ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & An Int version of the ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Int corresponding to the number of customers with that ID, which should be 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_a5bc5c8659d6f72f1d6db24fae7f62af5}\label{classCustomerDatabase_a5bc5c8659d6f72f1d6db24fae7f62af5}} 
+\index{CustomerDatabase@{CustomerDatabase}!searchCustomer@{searchCustomer}}
+\index{searchCustomer@{searchCustomer}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{searchCustomer()}{searchCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Customer\+Database\+::search\+Customer (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Searches for the number of customers with that username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & A string version of the username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Int corresponding to the number of customers with that ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_a3e006c365c029be5a20e4ce51a4bde5b}\label{classCustomerDatabase_a3e006c365c029be5a20e4ce51a4bde5b}} 
+\index{CustomerDatabase@{CustomerDatabase}!selectCustomer@{selectCustomer}}
+\index{selectCustomer@{selectCustomer}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{selectCustomer()}{selectCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomer}{Customer}} Customer\+Database\+::select\+Customer (\begin{DoxyParamCaption}\item[{int}]{unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Selects a single customers based on ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & An Int version of the customers ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A customer object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_af093e3410f702768472f68f110c1a016}\label{classCustomerDatabase_af093e3410f702768472f68f110c1a016}} 
+\index{CustomerDatabase@{CustomerDatabase}!selectCustomer@{selectCustomer}}
+\index{selectCustomer@{selectCustomer}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{selectCustomer()}{selectCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomer}{Customer}} Customer\+Database\+::select\+Customer (\begin{DoxyParamCaption}\item[{string}]{user\+Email }\end{DoxyParamCaption})}
+
+
+
+Selects a single customers based on email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & A string version of the customers email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A customer object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_a0f2d02e17218f1651e3b519f9e0e477f}\label{classCustomerDatabase_a0f2d02e17218f1651e3b519f9e0e477f}} 
+\index{CustomerDatabase@{CustomerDatabase}!selectCustomers@{selectCustomers}}
+\index{selectCustomers@{selectCustomers}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{selectCustomers()}{selectCustomers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ Customer\+Database\+::select\+Customers (\begin{DoxyParamCaption}\item[{string}]{user\+Email\mbox{[}$\,$\mbox{]},  }\item[{int}]{arr\+Size }\end{DoxyParamCaption})}
+
+
+
+Selects a list of customers based on emails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Email} & A string list of User Emails \\
+\hline
+{\em arr\+Size} & The Int size of the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector$<$\+Customer$>$ list of customer objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_afc287702c24fe6b8b166e1d9f4b5d8da}\label{classCustomerDatabase_afc287702c24fe6b8b166e1d9f4b5d8da}} 
+\index{CustomerDatabase@{CustomerDatabase}!selectCustomers@{selectCustomers}}
+\index{selectCustomers@{selectCustomers}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{selectCustomers()}{selectCustomers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $>$ Customer\+Database\+::select\+Customers (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{list\+Unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Selects a list of customers based on ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Unique\+ID} & A vector$<$int$>$ list of customer IDs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector$<$\+Customer$>$ list of customer objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCustomerDatabase_a8fd43b1da5aaa9c5a0931aff7db9532c}\label{classCustomerDatabase_a8fd43b1da5aaa9c5a0931aff7db9532c}} 
+\index{CustomerDatabase@{CustomerDatabase}!updateUniqueID@{updateUniqueID}}
+\index{updateUniqueID@{updateUniqueID}!CustomerDatabase@{CustomerDatabase}}
+\doxysubsubsection{\texorpdfstring{updateUniqueID()}{updateUniqueID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomer}{Customer}} Customer\+Database\+::update\+Unique\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Updates a customers unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & A customer object to update their ID \\
+\hline
+\end{DoxyParams}

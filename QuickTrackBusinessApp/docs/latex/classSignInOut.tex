@@ -1,0 +1,129 @@
+\hypertarget{classSignInOut}{}\doxysection{Sign\+In\+Out Class Reference}
+\label{classSignInOut}\index{SignInOut@{SignInOut}}
+
+
+This class extends the database class and allows for sign in and sign out of customers.  
+
+
+
+
+{\ttfamily \#include $<$Sign\+In\+Out.\+h$>$}
+
+Inheritance diagram for Sign\+In\+Out\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSignInOut}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}{Sign\+In\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Empty Constructor for the sign in and out class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSignInOut_ab1eb67eba89c015cc6c131e0063af825}{Sign\+In}} (int customer\+ID, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs in a customer to the database who has an account. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSignInOut_a147e1d3d614f65051e9a331d6d95361b}{Sign\+In}} (int customer\+ID, string first\+Name, string last\+Name, long long int phone\+Number, string email, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs in a customer to the database who does not have an account. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSignInOut_a32c18cba265a1189e9cae791bf483fdd}{Sign\+Out}} (int customer\+ID, int business\+ID, \mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}} customer)
+\begin{DoxyCompactList}\small\item\em Signs out a customer from the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class extends the database class and allows for sign in and sign out of customers. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}\label{classSignInOut_a654529ec6d5fe4cdc01e2eaa393ccd8b}} 
+\index{SignInOut@{SignInOut}!SignInOut@{SignInOut}}
+\index{SignInOut@{SignInOut}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignInOut()}{SignInOut()}}
+{\footnotesize\ttfamily Sign\+In\+Out\+::\+Sign\+In\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty Constructor for the sign in and out class. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classSignInOut}{Sign\+In\+Out}} object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignInOut_ab1eb67eba89c015cc6c131e0063af825}\label{classSignInOut_ab1eb67eba89c015cc6c131e0063af825}} 
+\index{SignInOut@{SignInOut}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Sign\+In\+Out\+::\+Sign\+In (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs in a customer to the database who has an account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignInOut_a147e1d3d614f65051e9a331d6d95361b}\label{classSignInOut_a147e1d3d614f65051e9a331d6d95361b}} 
+\index{SignInOut@{SignInOut}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Sign\+In\+Out\+::\+Sign\+In (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{long long int}]{phone\+Number,  }\item[{string}]{email,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs in a customer to the database who does not have an account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em first\+Name} & A String representaion of the customers first name \\
+\hline
+{\em last\+Name} & A String representaion of the customers last name \\
+\hline
+{\em phone\+Number} & A Long Long Int representaion of the customers phone number \\
+\hline
+{\em email} & A String representaion of the customers email \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignInOut_a32c18cba265a1189e9cae791bf483fdd}\label{classSignInOut_a32c18cba265a1189e9cae791bf483fdd}} 
+\index{SignInOut@{SignInOut}!SignOut@{SignOut}}
+\index{SignOut@{SignOut}!SignInOut@{SignInOut}}
+\doxysubsubsection{\texorpdfstring{SignOut()}{SignOut()}}
+{\footnotesize\ttfamily bool Sign\+In\+Out\+::\+Sign\+Out (\begin{DoxyParamCaption}\item[{int}]{customer\+ID,  }\item[{int}]{business\+ID,  }\item[{\mbox{\hyperlink{classCustomerDatabase}{Customer\+Database}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Signs out a customer from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & An Int representaion of the customers ID \\
+\hline
+{\em business\+ID} & An Int representaion of the buisness ID \\
+\hline
+{\em customer} & The \mbox{\hyperlink{classCustomer}{Customer}} \mbox{\hyperlink{classDatabase}{Database}} to sign the customer into \\
+\hline
+\end{DoxyParams}

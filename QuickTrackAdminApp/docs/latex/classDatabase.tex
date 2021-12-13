@@ -1,0 +1,230 @@
+\hypertarget{classDatabase}{}\doxysection{Database Class Reference}
+\label{classDatabase}\index{Database@{Database}}
+
+
+This class represents the database and connects to it.  
+
+
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
+Inheritance diagram for Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDatabase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDatabase_a4703c80e6969d33565ea340f768fdadf}{Database}} ()
+\begin{DoxyCompactList}\small\item\em Empty \mbox{\hyperlink{classDatabase}{Database}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database}} (string server\+Name, string user\+Name, string password)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDatabase}{Database}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDatabase_a6454aef5c6379e15e7713e24ebaafa68}{Database}} (int cond, string server\+Name, string user\+Name, string password, string database\+Name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDatabase}{Database}} Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDatabase_a9ed73717553e60b70ff95f1f000077ca}{get\+Connect\+Locally}} ()
+\begin{DoxyCompactList}\small\item\em Checks for local connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database}} (string server\+Name, string user\+Name, string password)
+\item 
+\mbox{\hyperlink{classDatabase_a84d399a2ad58d69daab9b05330e1316d}{$\sim$\+Database}} ()
+\item 
+void \mbox{\hyperlink{classDatabase_a920645d8a2940d27ab2afa7677b98f39}{select\+Customers}} ()
+\item 
+void \mbox{\hyperlink{classDatabase_ae54b3f122288cdbf182e0f5f91086731}{select\+Business}} ()
+\item 
+void \mbox{\hyperlink{classDatabase_aa8d1bbef4d35893ce498ae52581080e4}{insert\+Customer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Driver $\ast$ \mbox{\hyperlink{classDatabase_a1a5d2d58a033b9f06d1bc274a2f89d55}{driver}}
+\item 
+Connection $\ast$ \mbox{\hyperlink{classDatabase_abdf2196c3565a9868c200f28c213ac55}{con}}
+\item 
+Statement $\ast$ \mbox{\hyperlink{classDatabase_a8b56afbf31673eeb86d5c72124119b71}{stmt}}
+\item 
+Result\+Set $\ast$ \mbox{\hyperlink{classDatabase_a1622fbe2a91b1ec937eb3f604de7dc37}{res}}
+\item 
+Prepared\+Statement $\ast$ \mbox{\hyperlink{classDatabase_a764650f790bfb7f93b31f19484ea267c}{pstmt}}
+\item 
+bool \mbox{\hyperlink{classDatabase_ad8044dfc9f511415627f74d6c1027fb9}{connect\+Locally}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the database and connects to it. 
+
+\begin{DoxyAuthor}{Author}
+Abdulrahim Hamed (ahamed4) 
+
+Braikhna Yousafzai (byousafz) 
+
+Colin Stoddart (cstodda6) 
+
+Evangelos Makris (emakris2) 
+
+Jem Parlakyigit (mparlaky) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDatabase_a4703c80e6969d33565ea340f768fdadf}\label{classDatabase_a4703c80e6969d33565ea340f768fdadf}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty \mbox{\hyperlink{classDatabase}{Database}} Constructor. 
+
+\begin{DoxyReturn}{Returns}
+A database object 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database\+::\+Database(string server\+Name, string user\+Name, string password)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}\label{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{string}]{server\+Name,  }\item[{string}]{user\+Name,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classDatabase}{Database}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Name} & A string version of the server address(name) \\
+\hline
+{\em user\+Name} & A string version of the server username \\
+\hline
+{\em password} & A string version of the server password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A database object 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database\+::\+Database(string server\+Name, string user\+Name, string password)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDatabase_a6454aef5c6379e15e7713e24ebaafa68}\label{classDatabase_a6454aef5c6379e15e7713e24ebaafa68}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{int}]{cond,  }\item[{string}]{server\+Name,  }\item[{string}]{user\+Name,  }\item[{string}]{password,  }\item[{string}]{database\+Name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classDatabase}{Database}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cond} & A Int representing a certian condition related to the database connection \\
+\hline
+{\em server\+Name} & A string version of the server address(name) \\
+\hline
+{\em user\+Name} & A string version of the server username \\
+\hline
+{\em password} & A string version of the server password \\
+\hline
+{\em database\+Name} & A string version of the database you want to connect to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A database object 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database\+::\+Database(string server\+Name, string user\+Name, string password)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}\label{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{string}]{server\+Name,  }\item[{string}]{user\+Name,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDatabase_a84d399a2ad58d69daab9b05330e1316d}\label{classDatabase_a84d399a2ad58d69daab9b05330e1316d}} 
+\index{Database@{Database}!````~Database@{$\sim$Database}}
+\index{````~Database@{$\sim$Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{$\sim$Database()}{~Database()}}
+{\footnotesize\ttfamily Database\+::$\sim$\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDatabase_a9ed73717553e60b70ff95f1f000077ca}\label{classDatabase_a9ed73717553e60b70ff95f1f000077ca}} 
+\index{Database@{Database}!getConnectLocally@{getConnectLocally}}
+\index{getConnectLocally@{getConnectLocally}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getConnectLocally()}{getConnectLocally()}}
+{\footnotesize\ttfamily bool Database\+::get\+Connect\+Locally (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks for local connection. 
+
+\begin{DoxyReturn}{Returns}
+A bool representing the status of the local connection 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase_a6e48a7e7d6fe32959b8d75107735781e}{Database\+::\+Database(string server\+Name, string user\+Name, string password)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDatabase_aa8d1bbef4d35893ce498ae52581080e4}\label{classDatabase_aa8d1bbef4d35893ce498ae52581080e4}} 
+\index{Database@{Database}!insertCustomer@{insertCustomer}}
+\index{insertCustomer@{insertCustomer}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{insertCustomer()}{insertCustomer()}}
+{\footnotesize\ttfamily void Database\+::insert\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDatabase_ae54b3f122288cdbf182e0f5f91086731}\label{classDatabase_ae54b3f122288cdbf182e0f5f91086731}} 
+\index{Database@{Database}!selectBusiness@{selectBusiness}}
+\index{selectBusiness@{selectBusiness}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{selectBusiness()}{selectBusiness()}}
+{\footnotesize\ttfamily void Database\+::select\+Business (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDatabase_a920645d8a2940d27ab2afa7677b98f39}\label{classDatabase_a920645d8a2940d27ab2afa7677b98f39}} 
+\index{Database@{Database}!selectCustomers@{selectCustomers}}
+\index{selectCustomers@{selectCustomers}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{selectCustomers()}{selectCustomers()}}
+{\footnotesize\ttfamily void Database\+::select\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDatabase_abdf2196c3565a9868c200f28c213ac55}\label{classDatabase_abdf2196c3565a9868c200f28c213ac55}} 
+\index{Database@{Database}!con@{con}}
+\index{con@{con}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{con}{con}}
+{\footnotesize\ttfamily Connection $\ast$ Database\+::con}
+
+\mbox{\Hypertarget{classDatabase_ad8044dfc9f511415627f74d6c1027fb9}\label{classDatabase_ad8044dfc9f511415627f74d6c1027fb9}} 
+\index{Database@{Database}!connectLocally@{connectLocally}}
+\index{connectLocally@{connectLocally}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{connectLocally}{connectLocally}}
+{\footnotesize\ttfamily bool Database\+::connect\+Locally}
+
+\mbox{\Hypertarget{classDatabase_a1a5d2d58a033b9f06d1bc274a2f89d55}\label{classDatabase_a1a5d2d58a033b9f06d1bc274a2f89d55}} 
+\index{Database@{Database}!driver@{driver}}
+\index{driver@{driver}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{driver}{driver}}
+{\footnotesize\ttfamily Driver $\ast$ Database\+::driver}
+
+\mbox{\Hypertarget{classDatabase_a764650f790bfb7f93b31f19484ea267c}\label{classDatabase_a764650f790bfb7f93b31f19484ea267c}} 
+\index{Database@{Database}!pstmt@{pstmt}}
+\index{pstmt@{pstmt}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{pstmt}{pstmt}}
+{\footnotesize\ttfamily Prepared\+Statement $\ast$ Database\+::pstmt}
+
+\mbox{\Hypertarget{classDatabase_a1622fbe2a91b1ec937eb3f604de7dc37}\label{classDatabase_a1622fbe2a91b1ec937eb3f604de7dc37}} 
+\index{Database@{Database}!res@{res}}
+\index{res@{res}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily Result\+Set $\ast$ Database\+::res}
+
+\mbox{\Hypertarget{classDatabase_a8b56afbf31673eeb86d5c72124119b71}\label{classDatabase_a8b56afbf31673eeb86d5c72124119b71}} 
+\index{Database@{Database}!stmt@{stmt}}
+\index{stmt@{stmt}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{stmt}{stmt}}
+{\footnotesize\ttfamily Statement $\ast$ Database\+::stmt}
+
